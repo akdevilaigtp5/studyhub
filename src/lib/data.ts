@@ -11,6 +11,7 @@ import {
   Award,
   Users,
   GraduationCap,
+  Image,
 } from 'lucide-react';
 
 export const navLinks = [
@@ -24,6 +25,7 @@ export const navLinks = [
   { name: 'Admission', href: '/admission' },
   { name: 'Contact', href: '#contact' },
   { name: 'Content Ideas', href: '/content-ideas' },
+  { name: 'Image Generator', href: '/image-generator'},
   { name: 'Admin', href: '/admin/inquiries' },
 ];
 
