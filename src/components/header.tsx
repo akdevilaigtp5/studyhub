@@ -7,9 +7,11 @@ import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { usePathname } from 'next/navigation';
 import { navLinks } from '@/lib/data';
+import { useAuth } from '@/hooks/use-auth';
 
 const Header = () => {
   const pathname = usePathname();
+  const { isAuthenticated } = useAuth();
 
   const isMainPage = pathname === '/';
 
@@ -25,6 +27,18 @@ const Header = () => {
               isMainPage || !link.href.startsWith('#')
                 ? link.href
                 : `/${link.href}`;
+            
+            if (link.name === 'Admin' && !isAuthenticated) {
+              return (
+                <Link
+                  key={link.name}
+                  href="/admin/login"
+                  className="transition-colors hover:text-foreground/80 text-foreground/60"
+                >
+                  Admin
+                </Link>
+              );
+            }
             return (
               <Link
                 key={link.name}
@@ -54,6 +68,19 @@ const Header = () => {
                     isMainPage || !link.href.startsWith('#')
                       ? link.href
                       : `/${link.href}`;
+                  
+                   if (link.name === 'Admin' && !isAuthenticated) {
+                      return (
+                        <Link
+                          key={link.name}
+                          href="/admin/login"
+                           className="text-lg font-medium transition-colors hover:text-foreground/80 text-foreground/60"
+                        >
+                          Admin
+                        </Link>
+                      );
+                    }
+
                   return (
                     <Link
                       key={link.name}

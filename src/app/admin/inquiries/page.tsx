@@ -15,6 +15,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { format } from 'date-fns';
+import LogoutButton from './logout-button';
 
 export default async function InquiriesPage() {
   const inquiries = await getInquiries();
@@ -23,13 +24,16 @@ export default async function InquiriesPage() {
     <div className="py-16 sm:py-24">
       <div className="container">
         <Card>
-          <CardHeader>
-            <CardTitle className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-              Contact Form Inquiries
-            </CardTitle>
-            <CardDescription>
-              Here are the messages submitted through your website.
-            </CardDescription>
+          <CardHeader className="flex flex-row justify-between items-start">
+            <div>
+              <CardTitle className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+                Contact Form Inquiries
+              </CardTitle>
+              <CardDescription>
+                Here are the messages submitted through your website.
+              </CardDescription>
+            </div>
+            <LogoutButton />
           </CardHeader>
           <CardContent>
             {inquiries.length > 0 ? (
