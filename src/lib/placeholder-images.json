@@ -3,39 +3,69 @@
   "placeholderImages": [
     {
       "id": "teacher-1",
-      "description": "Photo of a smiling female teacher in a classroom.",
+      "description": "Photo of a smiling male teacher in a classroom.",
       "imageUrl": "https://picsum.photos/seed/teacher1/400/400",
-      "imageHint": "teacher classroom"
+      "imageHint": "math teacher"
     },
     {
       "id": "teacher-2",
       "description": "Photo of a male teacher explaining something on a whiteboard.",
       "imageUrl": "https://picsum.photos/seed/teacher2/400/400",
-      "imageHint": "teacher whiteboard"
+      "imageHint": "english teacher"
     },
     {
       "id": "teacher-3",
       "description": "Photo of a friendly teacher helping a student.",
       "imageUrl": "https://picsum.photos/seed/teacher3/400/400",
-      "imageHint": "teacher student"
+      "imageHint": "physics teacher"
     },
      {
       "id": "teacher-4",
       "description": "Photo of a male teacher in a lab coat.",
       "imageUrl": "https://picsum.photos/seed/teacher4/400/400",
-      "imageHint": "male teacher"
+      "imageHint": "chemistry teacher"
     },
     {
       "id": "teacher-5",
       "description": "Photo of an experienced, smiling male teacher.",
       "imageUrl": "https://picsum.photos/seed/teacher5/400/400",
-      "imageHint": "experienced teacher"
+      "imageHint": "male professor"
     },
     {
       "id": "about-us-image",
       "description": "Photo of a modern and bright tuition center.",
       "imageUrl": "https://picsum.photos/seed/aboutus/1200/800",
-      "imageHint": "modern classroom"
+      "imageHint": "library study"
+    },
+    {
+      "id": "hero-image",
+      "description": "Photo of students studying in a classroom.",
+      "imageUrl": "https://picsum.photos/seed/hero/1200/800",
+      "imageHint": "students studying"
+    },
+    {
+      "id": "testimonial-1-image",
+      "description": "Photo of a happy parent.",
+      "imageUrl": "https://picsum.photos/seed/sarahl/100/100",
+      "imageHint": "happy parent"
+    },
+    {
+      "id": "testimonial-2-image",
+      "description": "Photo of a female college student.",
+      "imageUrl": "https://picsum.photos/seed/jamesp/100/100",
+      "imageHint": "college student"
+    },
+    {
+      "id": "testimonial-3-image",
+      "description": "Photo of a smiling parent.",
+      "imageUrl": "https://picsum.photos/seed/mariag/100/100",
+      "imageHint": "smiling parent"
+    },
+    {
+      "id": "testimonial-4-image",
+      "description": "Photo of a male student.",
+      "imageUrl": "https://picsum.photos/seed/leok/100/100",
+      "imageHint": "male student"
     }
   ]
 }

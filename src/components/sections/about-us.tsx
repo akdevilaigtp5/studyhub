@@ -37,7 +37,7 @@ const AboutUs = () => {
                 alt="A modern and bright tuition center"
                 fill
                 className="object-cover"
-                data-ai-hint="modern classroom"
+                data-ai-hint="library study"
               />
             </div>
           </div>

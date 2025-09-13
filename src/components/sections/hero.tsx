@@ -32,7 +32,7 @@ const Hero = () => {
                     alt="Students learning in a modern classroom"
                     fill
                     className="object-cover"
-                    data-ai-hint="happy students classroom"
+                    data-ai-hint="students studying"
                     priority
                 />
             </Card>

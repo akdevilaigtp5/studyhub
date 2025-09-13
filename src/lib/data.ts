@@ -98,35 +98,35 @@ export const teachers = [
     name: 'Mr. Ritesh Kumar',
     qualifications: 'Mathematics, 27+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher1/400/400',
-    imageHint: 'teacher classroom',
+    imageHint: 'math teacher',
   },
   {
     id: 'teacher-2',
     name: 'Mr. Sudhakar Patil',
     qualifications: 'English, 30+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher2/400/400',
-    imageHint: 'teacher whiteboard',
+    imageHint: 'english teacher',
   },
   {
     id: 'teacher-3',
     name: 'Birender Sir',
     qualifications: 'Physics, 10+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher3/400/400',
-    imageHint: 'teacher student',
+    imageHint: 'physics teacher',
   },
   {
     id: 'teacher-4',
     name: 'Harish Chandra Patel',
     qualifications: 'Chemistry, 20+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher4/400/400',
-    imageHint: 'male teacher',
+    imageHint: 'chemistry teacher',
   },
   {
     id: 'teacher-5',
     name: 'B.D. Pandey',
     qualifications: 'Physics, 15+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher5/400/400',
-    imageHint: 'experienced teacher',
+    imageHint: 'male professor',
   },
 ];
 
@@ -178,7 +178,7 @@ export const testimonials = [
     role: 'Student, Grade 11',
     text: "The classes are engaging and the teachers are very supportive. I'm no longer intimidated by complex topics in Physics and feel much more prepared for my exams.",
     imageUrl: 'https://picsum.photos/seed/jamesp/100/100',
-    imageHint: 'female student',
+    imageHint: 'college student',
   },
   {
     id: 'testimonial-3',
@@ -194,7 +194,7 @@ export const testimonials = [
     role: 'Student, Grade 12',
     text: 'I was struggling with exam preparation on my own. The workshops at Study Hub provided me with the strategies and practice I needed. I highly recommend it!',
     imageUrl: 'https://picsum.photos/seed/leok/100/100',
-    imageHint: 'male teenager',
+    imageHint: 'male student',
   },
 ];
 
