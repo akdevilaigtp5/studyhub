@@ -3,7 +3,6 @@ import ClassListings from '@/components/sections/class-listings';
 import ContactForm from '@/components/sections/contact-form';
 import Faq from '@/components/sections/faq';
 import Hero from '@/components/sections/hero';
-import Schedule from '@/components/sections/schedule';
 import TeacherProfiles from '@/components/sections/teacher-profiles';
 import Testimonials from '@/components/sections/testimonials';
 import Fees from '@/components/sections/fees';
@@ -18,7 +17,6 @@ export default function Home() {
       <Fees />
       <TeacherProfiles />
       <Testimonials />
-      <Schedule />
       <AboutUs />
       <Faq />
       <ContactForm />

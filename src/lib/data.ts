@@ -28,7 +28,6 @@ export const navLinks = [
   { name: 'Fees', href: '#fees' },
   { name: 'Teachers', href: '#teachers' },
   { name: 'Testimonials', href: '#testimonials' },
-  { name: 'Schedule', href: '#schedule' },
   { name: 'About', href: '#about' },
   { name: 'FAQ', href: '#faq' },
   { name: 'Admission', href: '/admission' },
@@ -126,71 +125,6 @@ export const teachers = [
     imageHint: 'friendly woman',
   },
 ];
-
-export const schedule = {
-  Monday: [
-    {
-      time: '4:00 PM - 5:30 PM',
-      subject: 'Mathematics',
-      teacher: 'Mr. Ritesh Kumar',
-    },
-    {
-      time: '6:00 PM - 7:30 PM',
-      subject: 'English Literature',
-      teacher: 'Mr. Sudhakar Patil',
-    },
-    {
-      time: '3:00 PM - 4:30 PM',
-      subject: 'Advanced Physics',
-      teacher: 'Birender Sir',
-    },
-  ],
-  Tuesday: [
-    { time: '3:00 PM - 4:30 PM', subject: 'Physics', teacher: 'Birender Sir' },
-    {
-      time: '5:00 PM - 6:00 PM',
-      subject: 'Foreign Languages',
-      teacher: 'Ms. Isabella Rossi',
-    },
-  ],
-  Wednesday: [
-    {
-      time: '4:00 PM - 5:30 PM',
-      subject: 'Mathematics',
-      teacher: 'Mr. Ritesh Kumar',
-    },
-    {
-      time: '6:00 PM - 7:30 PM',
-      subject: 'English Literature',
-      teacher: 'Mr. Sudhakar Patil',
-    },
-  ],
-  Thursday: [
-    { time: '3:00 PM - 4:30 PM', subject: 'Physics', teacher: 'Birender Sir' },
-    {
-      time: '5:00 PM - 6:00 PM',
-      subject: 'Foreign Languages',
-      teacher: 'Ms. Isabella Rossi',
-    },
-  ],
-  Friday: [
-    {
-      time: '4:00 PM - 5:30 PM',
-      subject: 'Mathematics',
-      teacher: 'Mr. Ritesh Kumar',
-    },
-    {
-      time: '6:00 PM - 8:00 PM',
-      subject: 'Critical Thinking',
-      teacher: 'Mr. Ritesh Kumar',
-    },
-    {
-      time: '3:00 PM - 4:30 PM',
-      subject: 'Advanced Physics',
-      teacher: 'Birender Sir',
-    },
-  ],
-};
 
 export const faqs = [
   {
