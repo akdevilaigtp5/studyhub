@@ -13,6 +13,7 @@ import {
   Users,
   GraduationCap,
   Image,
+  FlaskConical,
 } from 'lucide-react';
 
 export const navLinks = [
@@ -54,42 +55,35 @@ export const classes = [
   {
     subject: 'Mathematics',
     teacher: 'Mr. Ritesh Kumar',
-    time: 'Mon, Wed, Fri | 4:00 PM - 5:30 PM',
+    time: 'Mon - Fri',
     icon: Calculator,
     grade: 10,
   },
   {
     subject: 'Physics',
     teacher: 'Birender Sir',
-    time: 'Tue, Thu | 3:00 PM - 4:30 PM',
+    time: 'Mon - Fri',
     icon: Atom,
     grade: 11,
   },
   {
     subject: 'English Literature',
     teacher: 'Mr. Sudhakar Patil',
-    time: 'Mon, Wed | 6:00 PM - 7:30 PM',
+    time: 'Mon - Fri',
     icon: BookOpen,
     grade: 12,
   },
-  {
-    subject: 'Foreign Languages',
-    teacher: 'Ms. Isabella Rossi',
-    time: 'Tue, Thu | 5:00 PM - 6:00 PM',
-    icon: Languages,
-    grade: 10,
-  },
-  {
-    subject: 'Critical Thinking',
-    teacher: 'Mr. Ritesh Kumar',
-    time: 'Fri | 6:00 PM - 8:00 PM',
-    icon: BrainCircuit,
+   {
+    subject: 'Chemistry',
+    teacher: 'Harish Chandra Patel',
+    time: 'Mon - Fri',
+    icon: FlaskConical,
     grade: 11,
   },
   {
     subject: 'Advanced Physics',
-    teacher: 'Birender Sir',
-    time: 'Mon, Fri | 3:00 PM - 4:30 PM',
+    teacher: 'B.D. Pandey',
+    time: 'Mon - Fri',
     icon: Atom,
     grade: 12,
   },
@@ -119,10 +113,17 @@ export const teachers = [
   },
   {
     id: 'teacher-4',
-    name: 'Ms. Isabella Rossi',
-    qualifications: 'Certified Language Instructor for Spanish and French.',
+    name: 'Harish Chandra Patel',
+    qualifications: 'Chemistry, 20+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher4/400/400',
-    imageHint: 'friendly woman',
+    imageHint: 'male teacher',
+  },
+  {
+    id: 'teacher-5',
+    name: 'B.D. Pandey',
+    qualifications: 'Physics, 15+ years of teaching experience.',
+    imageUrl: 'https://picsum.photos/seed/teacher5/400/400',
+    imageHint: 'experienced teacher',
   },
 ];
 
@@ -131,7 +132,7 @@ export const faqs = [
     id: 'faq-1',
     question: 'What subjects do you offer?',
     answer:
-      'We offer a wide range of subjects including Mathematics, Physics, English Literature, and Foreign Languages. We also provide specialized workshops for test preparation like the SAT.',
+      'We offer a wide range of subjects including Mathematics, Physics, Chemistry, and English Literature. We also provide specialized workshops for test preparation.',
   },
   {
     id: 'faq-2',
@@ -143,7 +144,7 @@ export const faqs = [
     id: 'faq-3',
     question: 'What is the class size?',
     answer:
-      'We believe in personalized attention, so our class sizes are small, typically with a maximum of 10 students per class. This ensures each student gets the support they need.',
+      'We believe in personalized attention, so our class sizes are small, typically with a maximum of 10-15 students per class. This ensures each student gets the support they need.',
   },
   {
     id: 'faq-4',
@@ -162,7 +163,7 @@ export const faqs = [
 export const testimonials = [
   {
     id: 'testimonial-1',
-    name: 'Sarah L.',
+    name: 'Aarav Sharma',
     role: 'Parent',
     text: "Study Hub has been a game-changer for my son's confidence in Math. The teaching method is incredibly effective. We've seen a significant improvement in his grades!",
     imageUrl: 'https://picsum.photos/seed/sarahl/100/100',
@@ -170,15 +171,15 @@ export const testimonials = [
   },
   {
     id: 'testimonial-2',
-    name: 'James P.',
+    name: 'Priya Patel',
     role: 'Student, Grade 11',
-    text: "The classes are engaging and I'm no longer intimidated by complex topics. I finally feel prepared for my exams.",
+    text: "The classes are engaging and the teachers are very supportive. I'm no longer intimidated by complex topics in Physics and feel much more prepared for my exams.",
     imageUrl: 'https://picsum.photos/seed/jamesp/100/100',
-    imageHint: 'male student',
+    imageHint: 'female student',
   },
   {
     id: 'testimonial-3',
-    name: 'Maria G.',
+    name: 'Rajesh Gupta',
     role: 'Parent',
     text: "The improvement in my daughter's writing skills since she joined the English Literature class is remarkable. The small class size makes a huge difference.",
     imageUrl: 'https://picsum.photos/seed/mariag/100/100',
@@ -186,9 +187,9 @@ export const testimonials = [
   },
   {
     id: 'testimonial-4',
-    name: 'Leo K.',
+    name: 'Rohan Mehra',
     role: 'Student, Grade 12',
-    text: 'I was struggling with SAT prep on my own. The workshop at Study Hub provided me with the strategies and practice I needed. I highly recommend it!',
+    text: 'I was struggling with exam preparation on my own. The workshops at Study Hub provided me with the strategies and practice I needed. I highly recommend it!',
     imageUrl: 'https://picsum.photos/seed/leok/100/100',
     imageHint: 'male teenager',
   },
@@ -196,34 +197,37 @@ export const testimonials = [
 
 export const fees = [
   {
-    plan: 'Starter',
-    price: 150,
-    description: 'Perfect for focusing on a single subject.',
-    features: ['1 subject', '2 classes per week', 'Weekly assignments'],
+    grade: '10th Grade',
+    price: '20,000',
+    period: 'yearly',
+    description: 'Comprehensive curriculum for a strong foundation.',
+    features: ['All core subjects covered', 'Regular mock tests', 'Doubt clearing sessions'],
     icon: DollarSign,
   },
   {
-    plan: 'Pro',
-    price: 280,
-    description: 'Ideal for students needing help in multiple areas.',
+    grade: '11th Grade',
+    price: '75,000',
+    period: 'yearly',
+    description: 'Specialized streams for Science and Commerce.',
     features: [
-      'Up to 3 subjects',
-      '4 classes per week',
-      'Personalized study plan',
-      'Monthly progress reports',
+      'In-depth subject modules',
+      'Practical lab sessions',
+      'Career counseling',
+      'Competitive exam preparation',
     ],
     icon: DollarSign,
     popular: true,
   },
   {
-    plan: 'Premium',
-    price: 400,
-    description: 'Comprehensive support for dedicated learners.',
+    grade: '12th Grade',
+    price: '85,000',
+    period: 'yearly',
+    description: 'Focused preparation for board exams and beyond.',
     features: [
-      'Unlimited subjects',
-      'Unlimited classes',
-      'One-on-one doubt sessions',
-      'College admission guidance',
+      'Intensive revision classes',
+      'Advanced problem-solving',
+      'Personalized mentorship',
+      'University application support',
     ],
     icon: DollarSign,
   },

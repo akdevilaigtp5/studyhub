@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -20,9 +21,15 @@
     },
      {
       "id": "teacher-4",
-      "description": "Friendly woman looking at the camera.",
+      "description": "Photo of a male teacher in a lab coat.",
       "imageUrl": "https://picsum.photos/seed/teacher4/400/400",
-      "imageHint": "friendly woman"
+      "imageHint": "male teacher"
+    },
+    {
+      "id": "teacher-5",
+      "description": "Photo of an experienced, smiling male teacher.",
+      "imageUrl": "https://picsum.photos/seed/teacher5/400/400",
+      "imageHint": "experienced teacher"
     },
     {
       "id": "about-us-image",

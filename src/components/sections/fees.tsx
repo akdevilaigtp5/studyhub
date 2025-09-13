@@ -21,13 +21,13 @@ const Fees = () => {
             Our Fees
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Choose a plan that fits your learning needs.
+            Choose a plan that fits your learning needs. All fees are yearly.
           </p>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
           {fees.map((fee) => (
             <Card
-              key={fee.plan}
+              key={fee.grade}
               className={cn(
                 'flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl',
                 fee.popular &&
@@ -40,10 +40,10 @@ const Fees = () => {
                 </div>
               )}
               <CardHeader className="items-center">
-                <CardTitle className="font-headline text-2xl">{fee.plan}</CardTitle>
+                <CardTitle className="font-headline text-2xl">{fee.grade}</CardTitle>
                 <p>
-                  <span className="text-4xl font-bold">${fee.price}</span>
-                  /month
+                  <span className="text-4xl font-bold">₹{fee.price}</span>
+                  /{fee.period}
                 </p>
                 <CardDescription>{fee.description}</CardDescription>
               </CardHeader>
@@ -59,7 +59,7 @@ const Fees = () => {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full">
-                  <Link href="/admission">Get Started</Link>
+                  <Link href="/admission">Enroll Now</Link>
                 </Button>
               </CardFooter>
             </Card>
