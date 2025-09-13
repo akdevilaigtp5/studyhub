@@ -4,6 +4,7 @@ import {
   Atom,
   Languages,
   BrainCircuit,
+  Shield,
 } from 'lucide-react';
 
 export const navLinks = [
@@ -14,6 +15,7 @@ export const navLinks = [
   { name: 'FAQ', href: '#faq' },
   { name: 'Contact', href: '#contact' },
   { name: 'Content Ideas', href: '/content-ideas' },
+  { name: 'Admin', href: '/admin/inquiries' },
 ];
 
 export const classes = [

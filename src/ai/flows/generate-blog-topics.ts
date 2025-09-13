@@ -9,7 +9,7 @@
  */
 
 import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import {z} from 'zod';
 
 const GenerateBlogTopicsInputSchema = z.object({
   subject: z.string().describe('The tuition subject to generate blog topics for.'),
