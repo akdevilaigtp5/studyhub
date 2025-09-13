@@ -5,11 +5,14 @@ import {
   Languages,
   BrainCircuit,
   Shield,
+  MessageSquareQuote,
+  LayoutDashboard,
 } from 'lucide-react';
 
 export const navLinks = [
   { name: 'Classes', href: '#classes' },
   { name: 'Teachers', href: '#teachers' },
+  { name: 'Testimonials', href: '#testimonials' },
   { name: 'Schedule', href: '#schedule' },
   { name: 'About', href: '#about' },
   { name: 'FAQ', href: '#faq' },
@@ -17,6 +20,19 @@ export const navLinks = [
   { name: 'Content Ideas', href: '/content-ideas' },
   { name: 'Admin', href: '/admin/inquiries' },
 ];
+
+export const adminNavLinks = [
+  {
+    name: 'Inquiries',
+    href: '/admin/inquiries',
+    icon: MessageSquareQuote,
+  },
+  {
+    name: 'Reviews',
+    href: '/admin/reviews',
+    icon: LayoutDashboard,
+  },
+]
 
 export const classes = [
   {
@@ -175,5 +191,40 @@ export const faqs = [
     question: 'How can I enroll?',
     answer:
       'You can enroll by filling out the contact form on our website. Our team will get in touch with you to discuss the details and complete the enrollment process.',
+  },
+];
+
+export const testimonials = [
+  {
+    id: 'testimonial-1',
+    name: 'Sarah L.',
+    role: 'Parent',
+    text: "TutorVista has been a game-changer for my son's confidence in Math. Dr. Reed's teaching method is incredibly effective. We've seen a significant improvement in his grades!",
+    imageUrl: 'https://picsum.photos/seed/sarahl/100/100',
+    imageHint: 'happy parent',
+  },
+  {
+    id: 'testimonial-2',
+    name: 'James P.',
+    role: 'Student, Grade 11',
+    text: "Mr. Chen makes Physics so much easier to understand. The classes are engaging and I'm no longer intimidated by complex topics. I finally feel prepared for my exams.",
+    imageUrl: 'https://picsum.photos/seed/jamesp/100/100',
+    imageHint: 'male student',
+  },
+  {
+    id: 'testimonial-3',
+    name: 'Maria G.',
+    role: 'Parent',
+    text: "The improvement in my daughter's writing skills since she joined Ms. Jenkins' English Literature class is remarkable. The small class size makes a huge difference.",
+    imageUrl: 'https://picsum.photos/seed/mariag/100/100',
+    imageHint: 'smiling parent',
+  },
+  {
+    id: 'testimonial-4',
+    name: 'Leo K.',
+    role: 'Student, Grade 12',
+    text: "I was struggling with SAT prep on my own. The workshop at TutorVista provided me with the strategies and practice I needed. I highly recommend it!",
+    imageUrl: 'https://picsum.photos/seed/leok/100/100',
+    imageHint: 'male teenager',
   },
 ];

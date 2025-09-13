@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export const config = {
-  matcher: '/admin/:path*',
+  matcher: ['/admin/:path*'],
 };
 
 export function middleware(request: NextRequest) {
@@ -10,6 +10,11 @@ export function middleware(request: NextRequest) {
 
   if (request.nextUrl.pathname.startsWith('/admin/login')) {
     return NextResponse.next();
+  }
+
+  // Redirect to login if the path is exactly /admin
+  if (request.nextUrl.pathname === '/admin') {
+    return NextResponse.redirect(new URL('/admin/inquiries', request.url));
   }
 
   if (!authToken || authToken !== process.env.ADMIN_PASSWORD) {
