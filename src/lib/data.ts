@@ -15,7 +15,15 @@ import {
 } from 'lucide-react';
 
 export const navLinks = [
-  { name: 'Classes', href: '#classes' },
+  {
+    name: 'Classes',
+    href: '#',
+    subLinks: [
+      { name: '10th Grade', href: '/classes/10' },
+      { name: '11th Grade', href: '/classes/11' },
+      { name: '12th Grade', href: '/classes/12' },
+    ],
+  },
   { name: 'Fees', href: '#fees' },
   { name: 'Teachers', href: '#teachers' },
   { name: 'Testimonials', href: '#testimonials' },
@@ -25,7 +33,7 @@ export const navLinks = [
   { name: 'Admission', href: '/admission' },
   { name: 'Contact', href: '#contact' },
   { name: 'Content Ideas', href: '/content-ideas' },
-  { name: 'Image Generator', href: '/image-generator'},
+  { name: 'Image Generator', href: '/image-generator' },
   { name: 'Admin', href: '/admin/inquiries' },
 ];
 
@@ -40,7 +48,7 @@ export const adminNavLinks = [
     href: '/admin/reviews',
     icon: LayoutDashboard,
   },
-]
+];
 
 export const classes = [
   {
@@ -48,30 +56,42 @@ export const classes = [
     teacher: 'Dr. Evelyn Reed',
     time: 'Mon, Wed, Fri | 4:00 PM - 5:30 PM',
     icon: Calculator,
+    grade: 10,
   },
   {
     subject: 'Physics',
     teacher: 'Mr. David Chen',
     time: 'Tue, Thu | 3:00 PM - 4:30 PM',
     icon: Atom,
+    grade: 11,
   },
   {
     subject: 'English Literature',
     teacher: 'Ms. Sarah Jenkins',
     time: 'Mon, Wed | 6:00 PM - 7:30 PM',
     icon: BookOpen,
+    grade: 12,
   },
   {
     subject: 'Foreign Languages',
     teacher: 'Ms. Isabella Rossi',
     time: 'Tue, Thu | 5:00 PM - 6:00 PM',
     icon: Languages,
+    grade: 10,
   },
   {
     subject: 'Critical Thinking',
     teacher: 'Dr. Evelyn Reed',
     time: 'Fri | 6:00 PM - 8:00 PM',
     icon: BrainCircuit,
+    grade: 11,
+  },
+  {
+    subject: 'Advanced Physics',
+    teacher: 'Mr. David Chen',
+    time: 'Mon, Fri | 3:00 PM - 4:30 PM',
+    icon: Atom,
+    grade: 12,
   },
 ];
 
@@ -118,6 +138,11 @@ export const schedule = {
       subject: 'English Literature',
       teacher: 'Ms. Sarah Jenkins',
     },
+    {
+      time: '3:00 PM - 4:30 PM',
+      subject: 'Advanced Physics',
+      teacher: 'Mr. David Chen',
+    },
   ],
   Tuesday: [
     { time: '3:00 PM - 4:30 PM', subject: 'Physics', teacher: 'Mr. David Chen' },
@@ -158,6 +183,11 @@ export const schedule = {
       subject: 'Critical Thinking',
       teacher: 'Dr. Evelyn Reed',
     },
+    {
+      time: '3:00 PM - 4:30 PM',
+      subject: 'Advanced Physics',
+      teacher: 'Mr. David Chen',
+    },
   ],
 };
 
@@ -190,7 +220,7 @@ export const faqs = [
     id: 'faq-5',
     question: 'How can I enroll?',
     answer:
-      'You can enroll by visiting our Admission page for a step-by-step guide, or by filling out the contact form on our website. Our team will get in touch with you to discuss the details and complete the enrollment process.',
+      "You can enroll by visiting our Admission page for a step-by-step guide, or by filling out the contact form on our website. Our team will get in touch with you to discuss the details and complete the enrollment process.",
   },
 ];
 
@@ -199,7 +229,7 @@ export const testimonials = [
     id: 'testimonial-1',
     name: 'Sarah L.',
     role: 'Parent',
-    text: "TutorVista has been a game-changer for my son's confidence in Math. Dr. Reed's teaching method is incredibly effective. We've seen a significant improvement in his grades!",
+    text: "Study Hub has been a game-changer for my son's confidence in Math. Dr. Reed's teaching method is incredibly effective. We've seen a significant improvement in his grades!",
     imageUrl: 'https://picsum.photos/seed/sarahl/100/100',
     imageHint: 'happy parent',
   },
@@ -223,7 +253,7 @@ export const testimonials = [
     id: 'testimonial-4',
     name: 'Leo K.',
     role: 'Student, Grade 12',
-    text: "I was struggling with SAT prep on my own. The workshop at TutorVista provided me with the strategies and practice I needed. I highly recommend it!",
+    text: 'I was struggling with SAT prep on my own. The workshop at Study Hub provided me with the strategies and practice I needed. I highly recommend it!',
     imageUrl: 'https://picsum.photos/seed/leok/100/100',
     imageHint: 'male teenager',
   },
@@ -241,7 +271,12 @@ export const fees = [
     plan: 'Pro',
     price: 280,
     description: 'Ideal for students needing help in multiple areas.',
-    features: ['Up to 3 subjects', '4 classes per week', 'Personalized study plan', 'Monthly progress reports'],
+    features: [
+      'Up to 3 subjects',
+      '4 classes per week',
+      'Personalized study plan',
+      'Monthly progress reports',
+    ],
     icon: DollarSign,
     popular: true,
   },
@@ -249,7 +284,12 @@ export const fees = [
     plan: 'Premium',
     price: 400,
     description: 'Comprehensive support for dedicated learners.',
-    features: ['Unlimited subjects', 'Unlimited classes', 'One-on-one doubt sessions', 'College admission guidance'],
+    features: [
+      'Unlimited subjects',
+      'Unlimited classes',
+      'One-on-one doubt sessions',
+      'College admission guidance',
+    ],
     icon: DollarSign,
   },
 ];
@@ -278,28 +318,32 @@ export const successStats = [
 ];
 
 export const admissionProcess = [
-    {
-        step: 1,
-        title: "Submit an Inquiry",
-        description: "Fill out our contact form with your details and the subjects you're interested in. Our admissions team will review your information and reach out to you within 24 hours.",
-        icon: MessageSquareQuote,
-    },
-    {
-        step: 2,
-        title: "Free Consultation",
-        description: "We'll schedule a free, no-obligation consultation with you and your parents to discuss your academic goals, assess your needs, and answer any questions you may have about our programs.",
-        icon: Users,
-    },
-    {
-        step: 3,
-        title: "Placement Assessment",
-        description: "To ensure you're placed in the right class, we conduct a simple assessment test. This helps us understand your current knowledge level and tailor our teaching to your specific needs.",
-        icon: BrainCircuit,
-    },
-    {
-        step: 4,
-        title: "Enrollment & Orientation",
-        description: "Once the assessment is complete, we'll guide you through the final enrollment and payment process. You'll then attend a brief orientation session to meet your teachers and get acquainted with our learning platform.",
-        icon: GraduationCap,
-    }
+  {
+    step: 1,
+    title: 'Submit an Inquiry',
+    description:
+      "Fill out our contact form with your details and the subjects you're interested in. Our admissions team will review your information and reach out to you within 24 hours.",
+    icon: MessageSquareQuote,
+  },
+  {
+    step: 2,
+    title: 'Free Consultation',
+    description:
+      "We'll schedule a free, no-obligation consultation with you and your parents to discuss your academic goals, assess your needs, and answer any questions you may have about our programs.",
+    icon: Users,
+  },
+  {
+    step: 3,
+    title: 'Placement Assessment',
+    description:
+      "To ensure you're placed in the right class, we conduct a simple assessment test. This helps us understand your current knowledge level and tailor our teaching to your specific needs.",
+    icon: BrainCircuit,
+  },
+  {
+    step: 4,
+    title: 'Enrollment & Orientation',
+    description:
+      "Once the assessment is complete, we'll guide you through the final enrollment and payment process. You'll then attend a brief orientation session to meet your teachers and get acquainted with our learning platform.",
+    icon: GraduationCap,
+  },
 ];
