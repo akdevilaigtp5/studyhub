@@ -1,4 +1,4 @@
-import { Twitter, Facebook, Instagram, MapPin } from 'lucide-react';
+import { Twitter, Facebook, Instagram, MapPin, Phone, Mail } from 'lucide-react';
 import Logo from './logo';
 import Link from 'next/link';
 import { Button } from './ui/button';
@@ -14,9 +14,23 @@ const Footer = () => {
               Your partner in achieving academic excellence through personalized
               and expert tuition.
             </p>
-             <div className="mt-4 flex items-center gap-2 text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>Ankleshwar, Gujarat, India</span>
+             <div className="mt-4 flex flex-col gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4" />
+                    <span>Ankleshwar, Gujarat, India</span>
+                </div>
+                 <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    <a href="tel:+919408662622" className="hover:text-primary">
+                        +91 940 866 2622
+                    </a>
+                </div>
+                 <div className="flex items-center gap-2">
+                    <Mail className="h-4 w-4" />
+                     <a href="mailto:studyhubank@gmail.com" className="hover:text-primary">
+                        studyhubank@gmail.com
+                    </a>
+                </div>
             </div>
           </div>
           <div className="flex items-center gap-4">
