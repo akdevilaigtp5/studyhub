@@ -14,6 +14,9 @@ import {
   GraduationCap,
   Image,
   FlaskConical,
+  Trophy,
+  ClipboardList,
+  UserCheck,
 } from 'lucide-react';
 
 export const navLinks = [
@@ -235,24 +238,34 @@ export const fees = [
 
 export const successStats = [
   {
-    value: '98%',
-    label: 'Pass Rate',
-    icon: Award,
+    value: '94.88%',
+    label: 'Ritu Chaudhary (12th Sci)',
+    icon: Trophy,
   },
   {
-    value: '500+',
+    value: '90%',
+    label: 'Lakshya Yadav (11th Com)',
+    icon: Trophy,
+  },
+  {
+    value: '89%',
+    label: 'Ruchi Shah (12th)',
+    icon: Trophy,
+  },
+  {
+    value: '70+',
     label: 'Students Enrolled',
     icon: Users,
   },
   {
-    value: 'Top 10%',
-    label: 'University Placements',
-    icon: GraduationCap,
+    value: '5+',
+    label: 'Classes Offered',
+    icon: ClipboardList,
   },
   {
-    value: '15+',
-    label: 'Years of Experience',
-    icon: Shield,
+    value: '12',
+    label: 'Batches Running',
+    icon: UserCheck,
   },
 ];
 
