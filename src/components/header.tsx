@@ -28,17 +28,21 @@ const Header = () => {
                 ? link.href
                 : `/${link.href}`;
             
-            if (link.name === 'Admin' && !isAuthenticated) {
-              return (
-                <Link
-                  key={link.name}
-                  href="/admin/login"
-                  className="transition-colors hover:text-foreground/80 text-foreground/60"
-                >
-                  Admin
-                </Link>
-              );
+            if (link.name === 'Admin') {
+                if (isAuthenticated) {
+                    return (
+                        <Link
+                        key={link.name}
+                        href="/admin/inquiries"
+                        className="transition-colors hover:text-foreground/80 text-foreground/60"
+                        >
+                        Admin
+                        </Link>
+                    );
+                }
+                return null;
             }
+
             return (
               <Link
                 key={link.name}
@@ -69,16 +73,19 @@ const Header = () => {
                       ? link.href
                       : `/${link.href}`;
                   
-                   if (link.name === 'Admin' && !isAuthenticated) {
-                      return (
-                        <Link
-                          key={link.name}
-                          href="/admin/login"
-                           className="text-lg font-medium transition-colors hover:text-foreground/80 text-foreground/60"
-                        >
-                          Admin
-                        </Link>
-                      );
+                   if (link.name === 'Admin') {
+                      if (isAuthenticated) {
+                          return (
+                              <Link
+                              key={link.name}
+                              href="/admin/inquiries"
+                              className="text-lg font-medium transition-colors hover:text-foreground/80 text-foreground/60"
+                              >
+                              Admin
+                              </Link>
+                          );
+                      }
+                      return null;
                     }
 
                   return (
