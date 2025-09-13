@@ -1,3 +1,4 @@
+
 import {
   BookOpen,
   Calculator,
@@ -53,21 +54,21 @@ export const adminNavLinks = [
 export const classes = [
   {
     subject: 'Mathematics',
-    teacher: 'Dr. Evelyn Reed',
+    teacher: 'Mr. Ritesh Kumar',
     time: 'Mon, Wed, Fri | 4:00 PM - 5:30 PM',
     icon: Calculator,
     grade: 10,
   },
   {
     subject: 'Physics',
-    teacher: 'Mr. David Chen',
+    teacher: 'Birender Sir',
     time: 'Tue, Thu | 3:00 PM - 4:30 PM',
     icon: Atom,
     grade: 11,
   },
   {
     subject: 'English Literature',
-    teacher: 'Ms. Sarah Jenkins',
+    teacher: 'Mr. Sudhakar Patil',
     time: 'Mon, Wed | 6:00 PM - 7:30 PM',
     icon: BookOpen,
     grade: 12,
@@ -81,14 +82,14 @@ export const classes = [
   },
   {
     subject: 'Critical Thinking',
-    teacher: 'Dr. Evelyn Reed',
+    teacher: 'Mr. Ritesh Kumar',
     time: 'Fri | 6:00 PM - 8:00 PM',
     icon: BrainCircuit,
     grade: 11,
   },
   {
     subject: 'Advanced Physics',
-    teacher: 'Mr. David Chen',
+    teacher: 'Birender Sir',
     time: 'Mon, Fri | 3:00 PM - 4:30 PM',
     icon: Atom,
     grade: 12,
@@ -98,22 +99,22 @@ export const classes = [
 export const teachers = [
   {
     id: 'teacher-1',
-    name: 'Dr. Evelyn Reed',
-    qualifications: 'Ph.D. in Mathematics, 15+ years of teaching experience.',
+    name: 'Mr. Ritesh Kumar',
+    qualifications: 'Mathematics, 27+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher1/400/400',
     imageHint: 'teacher classroom',
   },
   {
     id: 'teacher-2',
-    name: 'Mr. David Chen',
-    qualifications: 'M.S. in Physics, specializing in advanced mechanics.',
+    name: 'Mr. Sudhakar Patil',
+    qualifications: 'English, 30+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher2/400/400',
     imageHint: 'teacher whiteboard',
   },
   {
     id: 'teacher-3',
-    name: 'Ms. Sarah Jenkins',
-    qualifications: 'M.A. in English, published author and literary critic.',
+    name: 'Birender Sir',
+    qualifications: 'Physics, 10+ years of teaching experience.',
     imageUrl: 'https://picsum.photos/seed/teacher3/400/400',
     imageHint: 'teacher student',
   },
@@ -131,21 +132,21 @@ export const schedule = {
     {
       time: '4:00 PM - 5:30 PM',
       subject: 'Mathematics',
-      teacher: 'Dr. Evelyn Reed',
+      teacher: 'Mr. Ritesh Kumar',
     },
     {
       time: '6:00 PM - 7:30 PM',
       subject: 'English Literature',
-      teacher: 'Ms. Sarah Jenkins',
+      teacher: 'Mr. Sudhakar Patil',
     },
     {
       time: '3:00 PM - 4:30 PM',
       subject: 'Advanced Physics',
-      teacher: 'Mr. David Chen',
+      teacher: 'Birender Sir',
     },
   ],
   Tuesday: [
-    { time: '3:00 PM - 4:30 PM', subject: 'Physics', teacher: 'Mr. David Chen' },
+    { time: '3:00 PM - 4:30 PM', subject: 'Physics', teacher: 'Birender Sir' },
     {
       time: '5:00 PM - 6:00 PM',
       subject: 'Foreign Languages',
@@ -156,16 +157,16 @@ export const schedule = {
     {
       time: '4:00 PM - 5:30 PM',
       subject: 'Mathematics',
-      teacher: 'Dr. Evelyn Reed',
+      teacher: 'Mr. Ritesh Kumar',
     },
     {
       time: '6:00 PM - 7:30 PM',
       subject: 'English Literature',
-      teacher: 'Ms. Sarah Jenkins',
+      teacher: 'Mr. Sudhakar Patil',
     },
   ],
   Thursday: [
-    { time: '3:00 PM - 4:30 PM', subject: 'Physics', teacher: 'Mr. David Chen' },
+    { time: '3:00 PM - 4:30 PM', subject: 'Physics', teacher: 'Birender Sir' },
     {
       time: '5:00 PM - 6:00 PM',
       subject: 'Foreign Languages',
@@ -176,17 +177,17 @@ export const schedule = {
     {
       time: '4:00 PM - 5:30 PM',
       subject: 'Mathematics',
-      teacher: 'Dr. Evelyn Reed',
+      teacher: 'Mr. Ritesh Kumar',
     },
     {
       time: '6:00 PM - 8:00 PM',
       subject: 'Critical Thinking',
-      teacher: 'Dr. Evelyn Reed',
+      teacher: 'Mr. Ritesh Kumar',
     },
     {
       time: '3:00 PM - 4:30 PM',
       subject: 'Advanced Physics',
-      teacher: 'Mr. David Chen',
+      teacher: 'Birender Sir',
     },
   ],
 };
@@ -229,7 +230,7 @@ export const testimonials = [
     id: 'testimonial-1',
     name: 'Sarah L.',
     role: 'Parent',
-    text: "Study Hub has been a game-changer for my son's confidence in Math. Dr. Reed's teaching method is incredibly effective. We've seen a significant improvement in his grades!",
+    text: "Study Hub has been a game-changer for my son's confidence in Math. The teaching method is incredibly effective. We've seen a significant improvement in his grades!",
     imageUrl: 'https://picsum.photos/seed/sarahl/100/100',
     imageHint: 'happy parent',
   },
@@ -237,7 +238,7 @@ export const testimonials = [
     id: 'testimonial-2',
     name: 'James P.',
     role: 'Student, Grade 11',
-    text: "Mr. Chen makes Physics so much easier to understand. The classes are engaging and I'm no longer intimidated by complex topics. I finally feel prepared for my exams.",
+    text: "The classes are engaging and I'm no longer intimidated by complex topics. I finally feel prepared for my exams.",
     imageUrl: 'https://picsum.photos/seed/jamesp/100/100',
     imageHint: 'male student',
   },
@@ -245,7 +246,7 @@ export const testimonials = [
     id: 'testimonial-3',
     name: 'Maria G.',
     role: 'Parent',
-    text: "The improvement in my daughter's writing skills since she joined Ms. Jenkins' English Literature class is remarkable. The small class size makes a huge difference.",
+    text: "The improvement in my daughter's writing skills since she joined the English Literature class is remarkable. The small class size makes a huge difference.",
     imageUrl: 'https://picsum.photos/seed/mariag/100/100',
     imageHint: 'smiling parent',
   },
