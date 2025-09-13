@@ -7,15 +7,21 @@ import {
   Shield,
   MessageSquareQuote,
   LayoutDashboard,
+  DollarSign,
+  Award,
+  Users,
+  GraduationCap,
 } from 'lucide-react';
 
 export const navLinks = [
   { name: 'Classes', href: '#classes' },
+  { name: 'Fees', href: '#fees' },
   { name: 'Teachers', href: '#teachers' },
   { name: 'Testimonials', href: '#testimonials' },
   { name: 'Schedule', href: '#schedule' },
   { name: 'About', href: '#about' },
   { name: 'FAQ', href: '#faq' },
+  { name: 'Admission', href: '/admission' },
   { name: 'Contact', href: '#contact' },
   { name: 'Content Ideas', href: '/content-ideas' },
   { name: 'Admin', href: '/admin/inquiries' },
@@ -190,7 +196,7 @@ export const faqs = [
     id: 'faq-5',
     question: 'How can I enroll?',
     answer:
-      'You can enroll by filling out the contact form on our website. Our team will get in touch with you to discuss the details and complete the enrollment process.',
+      'You can enroll by visiting our Admission page for a step-by-step guide, or by filling out the contact form on our website. Our team will get in touch with you to discuss the details and complete the enrollment process.',
   },
 ];
 
@@ -227,4 +233,79 @@ export const testimonials = [
     imageUrl: 'https://picsum.photos/seed/leok/100/100',
     imageHint: 'male teenager',
   },
+];
+
+export const fees = [
+  {
+    plan: 'Starter',
+    price: 150,
+    description: 'Perfect for focusing on a single subject.',
+    features: ['1 subject', '2 classes per week', 'Weekly assignments'],
+    icon: DollarSign,
+  },
+  {
+    plan: 'Pro',
+    price: 280,
+    description: 'Ideal for students needing help in multiple areas.',
+    features: ['Up to 3 subjects', '4 classes per week', 'Personalized study plan', 'Monthly progress reports'],
+    icon: DollarSign,
+    popular: true,
+  },
+  {
+    plan: 'Premium',
+    price: 400,
+    description: 'Comprehensive support for dedicated learners.',
+    features: ['Unlimited subjects', 'Unlimited classes', 'One-on-one doubt sessions', 'College admission guidance'],
+    icon: DollarSign,
+  },
+];
+
+export const successStats = [
+  {
+    value: '98%',
+    label: 'Pass Rate',
+    icon: Award,
+  },
+  {
+    value: '500+',
+    label: 'Students Enrolled',
+    icon: Users,
+  },
+  {
+    value: 'Top 10%',
+    label: 'University Placements',
+    icon: GraduationCap,
+  },
+  {
+    value: '15+',
+    label: 'Years of Experience',
+    icon: Shield,
+  },
+];
+
+export const admissionProcess = [
+    {
+        step: 1,
+        title: "Submit an Inquiry",
+        description: "Fill out our contact form with your details and the subjects you're interested in. Our admissions team will review your information and reach out to you within 24 hours.",
+        icon: MessageSquareQuote,
+    },
+    {
+        step: 2,
+        title: "Free Consultation",
+        description: "We'll schedule a free, no-obligation consultation with you and your parents to discuss your academic goals, assess your needs, and answer any questions you may have about our programs.",
+        icon: Users,
+    },
+    {
+        step: 3,
+        title: "Placement Assessment",
+        description: "To ensure you're placed in the right class, we conduct a simple assessment test. This helps us understand your current knowledge level and tailor our teaching to your specific needs.",
+        icon: BrainCircuit,
+    },
+    {
+        step: 4,
+        title: "Enrollment & Orientation",
+        description: "Once the assessment is complete, we'll guide you through the final enrollment and payment process. You'll then attend a brief orientation session to meet your teachers and get acquainted with our learning platform.",
+        icon: GraduationCap,
+    }
 ];
