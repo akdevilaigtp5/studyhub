@@ -36,8 +36,6 @@ export const navLinks = [
   { name: 'FAQ', href: '#faq' },
   { name: 'Admission', href: '/admission' },
   { name: 'Contact', href: '#contact' },
-  { name: 'Content Ideas', href: '/content-ideas' },
-  { name: 'Image Generator', href: '/image-generator' },
   { name: 'Admin', href: '/admin/inquiries' },
 ];
 

@@ -3,7 +3,6 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import ChatWidget from '@/components/chat-widget';
 
 export const metadata: Metadata = {
   title: 'Study Hub - Your Path to Academic Excellence',
@@ -34,7 +33,6 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <ChatWidget />
         <Toaster />
       </body>
     </html>
