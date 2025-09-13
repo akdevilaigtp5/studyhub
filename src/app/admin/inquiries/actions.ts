@@ -11,6 +11,7 @@ const FormSchema = z.object({
   email: z.string().email({
     message: 'Please enter a valid email address.',
   }),
+  phone: z.string().optional(),
   message: z.string().min(10, {
     message: 'Message must be at least 10 characters.',
   }),
@@ -21,6 +22,7 @@ export type FormState = {
   errors?: {
     name?: string[];
     email?: string[];
+    phone?: string[];
     message?: string[];
   };
 };
@@ -32,6 +34,7 @@ export async function saveInquiry(
   const validatedFields = FormSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
+    phone: formData.get('phone'),
     message: formData.get('message'),
   });
 

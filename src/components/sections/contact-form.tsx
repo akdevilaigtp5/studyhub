@@ -14,7 +14,7 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { useFormState, useFormStatus } from 'react-dom';
 import { saveInquiry } from '@/app/admin/inquiries/actions';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -31,6 +31,7 @@ function SubmitButton() {
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
   const initialState = { message: '', errors: {} };
   const [state, dispatch] = useFormState(saveInquiry, initialState);
 
@@ -47,6 +48,7 @@ const ContactForm = () => {
           title: 'Message Sent!',
           description: 'Thank you for your inquiry. We will get back to you shortly.',
         });
+        formRef.current?.reset();
       }
     }
   }, [state, toast]);
@@ -64,7 +66,7 @@ const ContactForm = () => {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form action={dispatch} className="space-y-4">
+            <form ref={formRef} action={dispatch} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
@@ -93,6 +95,16 @@ const ContactForm = () => {
                     ))}
                 </div>
               </div>
+               <div className="space-y-2">
+                  <Label htmlFor="phone">Phone (Optional)</Label>
+                  <Input id="phone" name="phone" placeholder="Your Phone Number" />
+                  {state.errors?.phone &&
+                    state.errors.phone.map((error: string) => (
+                      <p className="text-sm font-medium text-destructive" key={error}>
+                        {error}
+                      </p>
+                    ))}
+                </div>
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
                 <Textarea

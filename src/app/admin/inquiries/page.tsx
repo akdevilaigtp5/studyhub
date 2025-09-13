@@ -39,6 +39,7 @@ export default async function InquiriesPage() {
                 <TableHead>Received</TableHead>
                 <TableHead>Name</TableHead>
                 <TableHead>Email</TableHead>
+                <TableHead>Phone</TableHead>
                 <TableHead>Message</TableHead>
               </TableRow>
             </TableHeader>
@@ -50,6 +51,7 @@ export default async function InquiriesPage() {
                   </TableCell>
                   <TableCell>{inquiry.name}</TableCell>
                   <TableCell>{inquiry.email}</TableCell>
+                  <TableCell>{inquiry.phone || '-'}</TableCell>
                   <TableCell>{inquiry.message}</TableCell>
                 </TableRow>
               ))}

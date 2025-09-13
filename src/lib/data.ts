@@ -62,7 +62,7 @@ export const classes = [
   {
     subject: 'Foreign Languages',
     teacher: 'Ms. Isabella Rossi',
-    time: 'Tue, Thu, Sat | 5:00 PM - 6:00 PM',
+    time: 'Tue, Thu | 5:00 PM - 6:00 PM',
     icon: Languages,
   },
   {
@@ -155,14 +155,6 @@ export const schedule = {
       time: '6:00 PM - 8:00 PM',
       subject: 'Critical Thinking',
       teacher: 'Dr. Evelyn Reed',
-    },
-  ],
-  Saturday: [
-    { time: '10:00 AM - 12:00 PM', subject: 'SAT Prep Workshop', teacher: 'Staff' },
-    {
-      time: '5:00 PM - 6:00 PM',
-      subject: 'Foreign Languages',
-      teacher: 'Ms. Isabella Rossi',
     },
   ],
 };

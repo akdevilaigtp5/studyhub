@@ -29,7 +29,7 @@ const Schedule = () => {
         <Card className="mt-12">
           <CardContent className="p-2 sm:p-6">
             <Tabs defaultValue={days[0]} className="w-full">
-              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
+              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
                 {days.map((day) => (
                   <TabsTrigger key={day} value={day}>
                     {day}
