@@ -6,9 +6,9 @@ import Footer from '@/components/footer';
 import ChatWidget from '@/components/chat-widget';
 
 export const metadata: Metadata = {
-  title: 'TutorVista - Your Path to Academic Excellence',
+  title: 'Study Hub - Your Path to Academic Excellence',
   description:
-    'TutorVista offers expert tuition for a variety of subjects. Explore our classes, meet our qualified teachers, and find the perfect schedule for you.',
+    'Study Hub offers expert tuition for a variety of subjects. Explore our classes, meet our qualified teachers, and find the perfect schedule for you.',
 };
 
 export default function RootLayout({

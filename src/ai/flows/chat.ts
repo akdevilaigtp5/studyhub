@@ -1,6 +1,6 @@
 'use server';
 /**
- * @fileOverview A conversational AI for TutorVista.
+ * @fileOverview A conversational AI for Study Hub.
  *
  * - ask - A function that handles the conversation.
  */
@@ -9,7 +9,7 @@ import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 import { teachers, classes, faqs } from '@/lib/data';
 
-const TutorVistaContextSchema = z.object({
+const StudyHubContextSchema = z.object({
   teachers: z.any().describe('List of teachers and their qualifications.'),
   classes: z.any().describe('List of available classes.'),
   faqs: z.any().describe('Frequently asked questions and their answers.'),
@@ -21,11 +21,11 @@ const prompt = ai.definePrompt({
     schema: z.object({
       history: z.array(z.any()),
       question: z.string(),
-      context: TutorVistaContextSchema,
+      context: StudyHubContextSchema,
     }),
   },
-  prompt: `You are a friendly and helpful AI assistant for TutorVista, a tuition center.
-Your goal is to answer user questions about TutorVista.
+  prompt: `You are a friendly and helpful AI assistant for Study Hub, a tuition center.
+Your goal is to answer user questions about Study Hub.
 Use the provided context to answer questions, but do not mention that you are using context.
 Keep your answers concise and friendly.
 

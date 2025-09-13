@@ -17,7 +17,7 @@ const Testimonials = () => {
             What Our Students & Parents Say
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Hear from members of the TutorVista community.
+            Hear from members of the Study Hub community.
           </p>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-1 lg:grid-cols-2">

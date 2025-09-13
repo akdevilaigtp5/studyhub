@@ -11,11 +11,11 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2">
             <div className="p-8 sm:p-12">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-                About TutorVista
+                About Study Hub
               </h2>
               <p className="mt-4 text-muted-foreground">
                 Founded on the principle that every student deserves a chance to
-                shine, TutorVista is more than just a tuition center. We are a
+                shine, Study Hub is more than just a tuition center. We are a
                 community of passionate educators dedicated to nurturing young
                 minds and fostering a lifelong love for learning.
               </p>

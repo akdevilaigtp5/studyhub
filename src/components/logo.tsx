@@ -23,7 +23,7 @@ const Logo = ({ className }: { className?: string }) => {
         </svg>
       </div>
       <span className="ml-3 text-2xl font-bold text-foreground font-headline">
-        TutorVista
+        Study Hub
       </span>
     </div>
   );

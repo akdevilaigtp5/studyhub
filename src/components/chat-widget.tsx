@@ -82,7 +82,7 @@ export default function ChatWidget() {
     <Card className="fixed bottom-4 right-4 w-80 h-[28rem] flex flex-col shadow-lg">
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="space-y-1">
-          <CardTitle className="text-xl">TutorVista Assistant</CardTitle>
+          <CardTitle className="text-xl">Study Hub Assistant</CardTitle>
           <CardDescription>Ask me anything!</CardDescription>
         </div>
         <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>

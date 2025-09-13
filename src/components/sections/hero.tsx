@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-headline">
             Unlock Your Potential with{' '}
-            <span className="text-primary">TutorVista</span>
+            <span className="text-primary">Study Hub</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg text-muted-foreground">
             Expert-led tuition classes designed to help you excel. Join us and

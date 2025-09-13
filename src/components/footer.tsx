@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t pt-4 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} TutorVista. All rights reserved.
+          © {new Date().getFullYear()} Study Hub. All rights reserved.
         </div>
       </div>
     </footer>
