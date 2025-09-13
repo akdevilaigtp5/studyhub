@@ -14,7 +14,7 @@ import Link from 'next/link';
 
 const Fees = () => {
   return (
-    <section id="fees" className="py-16 sm:py-24 bg-muted/40">
+    <section id="fees" className="py-16 sm:py-24 bg-background">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
@@ -29,9 +29,9 @@ const Fees = () => {
             <Card
               key={fee.plan}
               className={cn(
-                'flex flex-col',
+                'flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl',
                 fee.popular &&
-                  'border-primary shadow-lg scale-105'
+                  'border-primary shadow-primary/20 scale-105'
               )}
             >
               {fee.popular && (

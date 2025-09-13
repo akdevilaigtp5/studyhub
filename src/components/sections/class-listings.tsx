@@ -9,7 +9,7 @@ import { classes } from '@/lib/data';
 
 const ClassListings = () => {
   return (
-    <section id="classes" className="py-16 sm:py-24 bg-muted/40">
+    <section id="classes" className="py-16 sm:py-24 bg-background">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
@@ -23,7 +23,7 @@ const ClassListings = () => {
           {classes.map((cls) => (
             <Card
               key={cls.subject}
-              className="flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+              className="flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <CardHeader className="flex-row items-center gap-4">
                 <div className="bg-primary/10 p-3 rounded-md">

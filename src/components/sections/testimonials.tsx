@@ -10,7 +10,7 @@ import { Star } from 'lucide-react';
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-16 sm:py-24">
+    <section id="testimonials" className="py-16 sm:py-24 bg-muted/20">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
@@ -24,7 +24,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.id}
-              className="transform transition-transform duration-300 hover:shadow-xl"
+              className="transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <CardContent className="pt-6">
                 <div className="flex mb-4">
